@@ -1,0 +1,22 @@
+---
+title: Nathan Wachholz | Blog
+breadcrumb: <nav><a href="/">index</a> / blog </nav>
+layout: default
+---
+<h1>
+Nathan's Blog
+</h1>
+<hr>
+<section>
+<h2>
+    Posts
+</h2>
+<div class="item-list">
+    {% for post in site.blogposts %}
+    <a href="{{ post.url }}">
+        <h3>{{ post.title }}</h3>
+        {{ post.excerpt | strip_html }}
+    </a>
+    {% endfor %}
+</div>
+</section>

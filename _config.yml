@@ -1,0 +1,24 @@
+icons: 
+  favicon: /static/favicon.png
+  linkedin: /static/linkedin64.png
+  github: /static/github64.png
+
+style: /static/style.css
+
+font:
+  open_sans: /static/OpenSans-Regular.ttf
+
+blog:
+  - title: air-guitar
+    url: /blog/air-guitar
+
+collections:
+  blogposts:
+    output: true
+    permalink: /blog/:path
+    order:
+    - cqdm.md
+    - arduino-from-python.md
+    - air-guitar.md
+    - moving-points.md
+

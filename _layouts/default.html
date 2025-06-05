@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <style>
+    @font-face {
+      font-family: "Open Sans";
+      font-display: swap;
+      src: url("{{ site.font.open_sans }}");
+    }
+  </style>
+  <link rel="stylesheet" href="{{ site.style }}">
+  <link rel="icon" href="{{ site.icons.favicon }}">
+</head>
+<body>
+{{ page.breadcrumb }}
+<main>
+  {{ content }}
+  <hr>
+  <footer>
+    <img src="{{ site.icons.favicon }}" alt="Icon"/>
+    <div class="copyright">&copy; {{ site.time | date: '%Y' }} Nathan Wachholz</div>
+    <div class="socials">
+      <a href="https://linkedin.com/in/nathan-wachholz" target="_blank"><img src="{{ site.icons.linkedin }}" alt="LinkedIn"></a><a href="https://github.com/n-wach" target="_blank"><img src="{{ site.icons.github }}" alt="GitHub"></a>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
